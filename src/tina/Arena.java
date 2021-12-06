@@ -8,9 +8,9 @@ public class Arena {
 		
 		do {
 			dingo.attack(mickey);
-			if(mickey.getLife()>0)  mickey.attack(dingo);
+			if(mickey.isAlive())  mickey.attack(dingo);
 		}
-		while(dingo.getLife() > 0 && mickey.getLife() > 0);
+		while(dingo.isAlive() && mickey.isAlive());
 		
 	}
 
